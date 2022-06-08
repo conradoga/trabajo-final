@@ -18,5 +18,6 @@ from django.urls import path
 from restaurante import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("restaurante/",views.mostrarcomida, name = "restaurante")
+    path("restaurante/",views.mostrarcomida, name = "restaurante"),
+    path("create_hamburguesas", views.Create_hamburguesa, name= "Create_hamburguesa"),
 ]
